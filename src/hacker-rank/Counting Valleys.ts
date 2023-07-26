@@ -22,7 +22,4 @@ function countingValleys(steps: number, path: string): number {
   return count;
 }
 
-const steps = 8,
-  path = "UDDDUDUU";
-
-console.log(countingValleys(steps, path));
+console.log(countingValleys(8, "UDDDUDUU"));
