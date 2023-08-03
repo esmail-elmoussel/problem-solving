@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/counting-valleys/problem
 
-function countingValleys(steps: number, path: string): number {
+export function countingValleys(steps: number, path: string): number {
   let hikerLevel = 0;
   let count = 0;
 

@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/2d-array/problem
 
-function hourglassSum(arr: number[][]): number {
+export function hourglassSum(arr: number[][]): number {
   const calculateHourglass = (firstIndex: number, secondIndex: number) => {
     let sum = 0;
 

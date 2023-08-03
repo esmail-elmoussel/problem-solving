@@ -1,6 +1,6 @@
 // Problem Link: https://leetcode.com/problems/spiral-matrix-ii/
 
-function generateMatrix(n: number): number[][] {
+export function generateMatrix(n: number): number[][] {
   let matrix: number[][] = [];
 
   let count = 1;

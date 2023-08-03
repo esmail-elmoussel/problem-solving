@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/repeated-string/problem
 
-function repeatedString(s: string, n: number): number {
+export function repeatedString(s: string, n: number): number {
   const reminder = n % s.length;
   const multiplyBy = (n - reminder) / s.length;
 

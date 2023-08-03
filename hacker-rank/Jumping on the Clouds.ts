@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem
 
-function jumpingOnClouds(c: number[]): number {
+export function jumpingOnClouds(c: number[]): number {
   let count = 0;
 
   for (let i = 0; i < c.length - 1; i++) {

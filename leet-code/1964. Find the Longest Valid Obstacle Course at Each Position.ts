@@ -24,7 +24,9 @@ const binarySearch = (arr: number[], number: number): number => {
   return low;
 };
 
-function longestObstacleCourseAtEachPosition(obstacles: number[]): number[] {
+export function longestObstacleCourseAtEachPosition(
+  obstacles: number[]
+): number[] {
   const result = Array(obstacles.length);
   const dynamicProgramming = Array(obstacles.length).fill(Math.pow(10, 10));
 

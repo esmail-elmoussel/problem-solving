@@ -1,6 +1,6 @@
 // Problem Link: https://leetcode.com/problems/count-binary-substrings/
 
-function countBinarySubstrings(s: string): number {
+export function countBinarySubstrings(s: string): number {
   let left = 0,
     right = 0,
     breakPoint = 0,

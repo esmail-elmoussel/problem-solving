@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/apple-and-orange
 
-function countApplesAndOranges(
+export function countApplesAndOranges(
   s: number,
   t: number,
   a: number,

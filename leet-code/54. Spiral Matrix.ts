@@ -1,6 +1,6 @@
 // Problem Link: https://leetcode.com/problems/spiral-matrix/
 
-function spiralOrder(matrix: number[][]): number[] {
+export function spiralOrder(matrix: number[][]): number[] {
   const result: number[] = [];
 
   let left = 0;

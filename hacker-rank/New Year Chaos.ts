@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/new-year-chaos/problem
 
-function minimumBribes(q: number[]): void {
+export function minimumBribes(q: number[]): void {
   let count = 0;
 
   function swapElements(i: number, j: number) {

@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/sock-merchant/problem
 
-function sockMerchant(n: number, ar: number[]): number {
+export function sockMerchant(n: number, ar: number[]): number {
   const matches = new Set();
   let count = 0;
 

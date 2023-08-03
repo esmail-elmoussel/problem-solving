@@ -1,6 +1,6 @@
 // Problem Link: https://leetcode.com/problems/container-with-most-water/
 
-function maxArea(nums: number[]): number {
+export function maxArea(nums: number[]): number {
   let left = 0;
   let right = nums.length - 1;
   let result = 0;

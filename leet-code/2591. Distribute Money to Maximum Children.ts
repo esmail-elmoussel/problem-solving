@@ -1,6 +1,6 @@
 // Problem Link: https://leetcode.com/problems/distribute-money-to-maximum-children/
 
-function distMoney(money: number, children: number): number {
+export function distMoney(money: number, children: number): number {
   if (money < children) {
     return -1;
   }

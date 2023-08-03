@@ -1,6 +1,6 @@
 // Problem Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-function lengthOfLongestSubstring(s: string): number {
+export function lengthOfLongestSubstring(s: string): number {
   const visitedChars = new Map<string, number>();
   let maxLength = 0;
   let left = 0;

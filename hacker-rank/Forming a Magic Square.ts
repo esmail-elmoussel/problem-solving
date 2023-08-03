@@ -1,6 +1,6 @@
 // Problem Link: https://www.hackerrank.com/challenges/magic-square-forming
 
-function formingMagicSquare(s: number[][]): number {
+export function formingMagicSquare(s: number[][]): number {
   const possibleMagicSquares = [
     [
       [8, 1, 6],
