@@ -1,4 +1,4 @@
-// Problem Link: https://leetcode.com/problems/two-sum/
+// Problem Link: https://leetcode.com/problems/find-the-student-that-will-replace-the-chalk/
 
 export function chalkReplacer(chalk: number[], k: number): number {
   let chalksCount = 0;
