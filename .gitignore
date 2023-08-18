@@ -129,6 +129,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-interviews/
-
 .DS_Store
+
+hidden/
+
+playground.ts
