@@ -1,16 +1,6 @@
 // Problem Link: https://leetcode.com/problems/linked-list-cycle-ii/
 
-/**
- * Definition for singly-linked list.
- */
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
+import { ListNode, createListNode, printListNode } from "./helpers/linked-list";
 
 export function detectCycle(head: ListNode | null): ListNode | null {
   let fast = head;
@@ -35,11 +25,6 @@ export function detectCycle(head: ListNode | null): ListNode | null {
   return null;
 }
 
-const nodeMins4 = new ListNode(-4);
-const node0 = new ListNode(0, nodeMins4);
-const node2 = new ListNode(2, node0);
-const node3 = new ListNode(3, node2);
+const head = createListNode([3, 2, 0, -4]);
 
-nodeMins4.next = node2;
-
-console.log(detectCycle(node3));
+printListNode(detectCycle(head));
