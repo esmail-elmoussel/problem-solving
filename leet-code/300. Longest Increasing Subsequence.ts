@@ -25,3 +25,5 @@ export function lengthOfLIS(nums: number[]): number {
 const nums = [7, 7, 7, 7, 7, 7, 7];
 
 console.log(lengthOfLIS(nums));
+
+// TODO: solve it using O(n log(n)) time complexity!
