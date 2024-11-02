@@ -1,6 +1,9 @@
 // Problem Link: https://leetcode.com/problems/longest-increasing-subsequence
 
 export function lengthOfLIS(nums: number[]): number {
+  /**
+   * Longest Increasing Subsequence
+   */
   const lis: number[] = [];
 
   let result = 1;
