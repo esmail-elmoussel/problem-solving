@@ -1,7 +1,7 @@
 // Problem Link: https://leetcode.com/problems/longest-increasing-subsequence
 
 export function lengthOfLIS(nums: number[]): number {
-  const results: number[] = [];
+  const lis: number[] = [];
 
   let result = 1;
 
@@ -10,19 +10,19 @@ export function lengthOfLIS(nums: number[]): number {
 
     for (let j = 0; j < i; j++) {
       if (nums[i] > nums[j]) {
-        max = Math.max(max, results[j] + 1);
+        max = Math.max(max, lis[j] + 1);
       }
     }
 
-    results[i] = max;
+    lis[i] = max;
 
-    result = Math.max(result, results[i]);
+    result = Math.max(result, lis[i]);
   }
 
   return result;
 }
 
-const nums = [7, 7, 7, 7, 7, 7, 7];
+const nums = [10, 9, 2, 5, 3, 7, 101, 18];
 
 console.log(lengthOfLIS(nums));
 
