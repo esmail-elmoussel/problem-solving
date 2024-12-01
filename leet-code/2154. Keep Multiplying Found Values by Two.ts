@@ -1,6 +1,10 @@
 // Problem Link: https://leetcode.com/problems/check-if-n-and-its-double-exist/
 
-export function findFinalValue(nums: number[], original: number): number {
+// Recursion Solution
+export function findFinalValueRecursion(
+  nums: number[],
+  original: number
+): number {
   const numsSet = new Set<number>(nums);
 
   const findMultipliedValue = (num: number): number => {
@@ -12,6 +16,17 @@ export function findFinalValue(nums: number[], original: number): number {
   };
 
   return findMultipliedValue(original);
+}
+
+// While Loop Solution
+export function findFinalValue(nums: number[], original: number): number {
+  const numsSet = new Set<number>(nums);
+
+  while (numsSet.has(original)) {
+    original *= 2;
+  }
+
+  return original;
 }
 
 const nums = [5, 3, 6, 1, 12],
