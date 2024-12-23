@@ -24,12 +24,30 @@ export function productExceptSelf(nums: number[]): number[] {
   return result;
 }
 
+// O(1) extra space complexity solution:
+export function productExceptSelfSpaceEfficient(nums: number[]): number[] {
+  const result: number[] = [1];
+
+  for (let i = 1; i < nums.length; i++) {
+    result[i] = nums[i - 1] * result[i - 1];
+  }
+
+  let postfix = 1;
+
+  for (let i = nums.length - 1; i >= 0; i--) {
+    result[i] = result[i] * postfix;
+
+    postfix = postfix * nums[i];
+  }
+
+  return result;
+}
+
 const nums = [1, 2, 3, 4];
 
-console.log(productExceptSelf(nums));
+console.log(productExceptSelfSpaceEfficient(nums));
 
-// [1,2,3,4]
-// [24,12,4,1]
-// [1,1,2,6]
-//
-// [24,12,8,6]
+// nums = [1,2,3,4]
+// prefix = [1,1,2,6]
+// postfix = [24,12,4,1]
+// result = [24,12,8,6]
