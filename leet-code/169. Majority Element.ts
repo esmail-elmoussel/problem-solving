@@ -4,20 +4,20 @@ export function majorityElement(nums: number[]): number {
   const counter = new Map<number, number>();
 
   let max: number = -1;
-  let result: number = -1;
 
   for (let i = 0; i < nums.length; i++) {
     const newCount: number = (counter.get(nums[i]) || 0) + 1;
 
     counter.set(nums[i], newCount);
 
-    if (newCount > max) {
-      max = newCount;
-      result = nums[i];
+    max = Math.max(newCount, max);
+
+    if (max > nums.length / 2) {
+      return nums[i];
     }
   }
 
-  return result;
+  return -1;
 }
 
 const nums = [3, 2, 3];
